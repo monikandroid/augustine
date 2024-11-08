@@ -1,0 +1,36 @@
+<MyRoot>:
+    FloatLayout:
+        Label:
+            text: "Welcome to NeutralRandom!"
+            font_size: 32
+            color: 0.2, 0.6, 0.8, 1  # Blue text color
+            bold: True
+            italic: True
+            size_hint: (0.8, 0.1)
+            pos_hint: {"center_x": 0.5, "top": 0.9}
+            halign: "center"
+            valign: "middle"
+            text_size: self.size
+
+        Button:
+            text: "Generate Random Number"
+            font_size: 24
+            size_hint: (0.4, 0.15)
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            background_color: (0.2, 0.6, 0.8, 1)  # Blue background color
+            color: (1, 1, 1, 1)  # White text color
+            on_press: root.generate_number()
+
+        Label:
+            id: random_label
+            text: "Random Number: 0"
+            font_size: 24
+            color: 0.2, 0.6, 0.8, 1
+            size_hint: (0.8, 0.1)
+            pos_hint: {"center_x": 0.5, "top": 0.4}
+            halign: "center"
+            valign: "middle"
+            text_size: self.size
+
+
+
